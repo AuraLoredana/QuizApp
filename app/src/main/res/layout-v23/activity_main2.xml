@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="fill_parent"
+android:layout_height="match_parent"
+android:layout_centerVertical="true"
+android:paddingTop="5dp"
+android:background="@drawable/mathbag"
+android:gravity="center_vertical"
+tools:context="com.example.popescu.quizapp.Main2Activity">
+
+    <Button
+    android:text="Previous"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/previous"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    style="@android:style/Widget.Material.Button.Colored" />
+
+<Button
+    android:text="Next"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/next"
+    android:layout_weight="1"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    style="@android:style/Widget.Material.Button.Colored" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_above="@+id/previous"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp">
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="#150"
+            android:text=" B. Of the following, which is greater than ½ ?"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="0.11" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="140dp">
+            <CheckBox
+                android:text="2/5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton"
+                android:layout_alignLeft="@+id/radioButton"
+                android:layout_alignStart="@+id/radioButton"
+                android:layout_marginTop="30dp"
+                android:id="@+id/radioButton2"
+                android:textSize="30sp"
+                android:textColor="@android:color/black"
+                android:textStyle="normal|bold" />
+
+            <CheckBox
+                android:text="6/13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/radioButton"
+                android:fontFamily="sans-serif"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="30dp" />
+
+            <CheckBox
+                android:text="4/7"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/radioButton3"
+                android:layout_alignLeft="@+id/radioButton3"
+                android:layout_alignStart="@+id/radioButton3"
+                android:layout_marginTop="30dp"
+                android:id="@+id/radioButton4"
+                android:textSize="30sp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold" />
+
+            <CheckBox
+                android:text="4/9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:id="@+id/radioButton3"
+                android:layout_below="@+id/radioButton2"
+                android:layout_alignLeft="@+id/radioButton2"
+                android:layout_alignStart="@+id/radioButton2"
+                android:textSize="30sp"
+                android:textColor="@android:color/black"
+                android:textStyle="normal|bold"
+                android:checked="false" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
